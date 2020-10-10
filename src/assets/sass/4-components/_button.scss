@@ -1,0 +1,49 @@
+.btn {
+  padding: 10px 40px;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  border: none;
+  background-color: $light-blue;
+  color: $grey;
+  display: inline-block;
+  width: 100%;
+
+  &--facebook {
+    background-color: #4368b2;
+    color: $light-grey;
+  }
+
+  &--google {
+    background-color: #ffffff;
+    color: $grey;
+  }
+
+  &--link {
+    padding: 0;
+    color: $dark-blue;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    background-color: transparent !important;
+    width: auto;
+  }
+
+  &--outline {
+    background-color: white !important;
+    border: 1px solid $grey;
+    color: $grey;
+    border-radius: 4px;
+  }
+
+  &--primary {
+    background-color: $blue;
+    color: $light-grey;
+  }
+
+  &--dark {
+    background-color: $dark-blue;
+    color: $light-grey;
+  }
+}

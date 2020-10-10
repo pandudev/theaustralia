@@ -1,0 +1,15 @@
+.header {
+  height: 200px;
+  background-image: url("./../img/home-header.jpg");
+  background-color: $black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: -96px;
+  z-index: 10;
+
+  @media screen and (min-width: 768px) {
+    top: -140px;
+  }
+}

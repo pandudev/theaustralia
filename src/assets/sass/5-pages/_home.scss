@@ -1,0 +1,366 @@
+.home {
+  &__selection {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .btn {
+      flex-basis: 50%;
+    }
+  }
+
+  &__header {
+    h1 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      color: $black;
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 37px;
+      color: $dark-blue;
+      display: flex;
+      align-items: center;
+      img {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__article {
+    @media screen and (min-width: 1024px) {
+      flex: 0 0 68% !important;
+    }
+
+    &__item {
+      border-top: 1px solid #e5e5e5;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      &__detail {
+        .article-avatar {
+          margin-right: 10px;
+          width: 48px;
+          height: 48px;
+          object-fit: cover;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+        .article-category {
+          font-size: 13px;
+          color: $grey;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        .article-title {
+          font-size: 18px;
+          color: $dark-blue;
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        .article-history {
+          & > div:first-of-type {
+            & > .article-action {
+              position: relative;
+
+              &::before {
+                position: absolute;
+                content: "•";
+                top: 50%;
+                left: -10px;
+                transform: translateY(-50%);
+              }
+            }
+          }
+        }
+
+        .article-user {
+          font-size: 13px;
+          color: $red;
+          font-weight: 400;
+        }
+
+        .article-action {
+          font-size: 13px;
+          color: $grey;
+          font-weight: 400;
+          margin: 0 8px;
+        }
+
+        .article-replies {
+          height: 24px;
+          background-color: $light-grey;
+          color: $grey;
+          padding: 5px;
+          border-radius: 2px;
+
+          img {
+            height: 18px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      &__thumb {
+        height: 180px;
+        border-radius: 6px;
+        overflow: hidden;
+        object-fit: cover;
+        margin-top: 12px;
+
+        @media screen and (min-width: 768px) {
+          width: 135px;
+          height: 70px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__loadmore {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__sidebar {
+    @media screen and (min-width: 1024px) {
+      flex: 0 0 30%;
+    }
+    margin-top: 10px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 30px;
+      color: $black;
+      font-weight: 700;
+    }
+
+    &__subtitle {
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 21px;
+      color: $grey;
+      font-weight: 400;
+    }
+
+    &__content {
+      margin-top: 20px;
+    }
+
+    & > div {
+      background-color: $light-blue;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__about {
+      .about-detail {
+        font-size: 14px;
+        line-height: 21px;
+        color: $grey;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .about-count {
+        margin-bottom: 20px;
+        h1 {
+          font-size: 24px;
+          line-height: 30px;
+          color: $black;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          color: $grey;
+          font-weight: 400;
+        }
+
+        &-divider {
+          height: 55px;
+          width: 1px;
+          background-color: $grey;
+          margin: 0 20px;
+        }
+      }
+    }
+
+    &__forums {
+      .forums-list {
+        &-item {
+          margin-bottom: 20px;
+          &-category {
+            font-size: 13px;
+            color: $dark-blue;
+            font-weight: 500;
+            line-height: 18px;
+          }
+
+          &-detail {
+            margin-top: 8px;
+            div {
+              margin-right: 30px;
+
+              img {
+                margin-right: 8px;
+              }
+
+              p {
+                font-size: 13px;
+                color: $grey;
+                line-height: 18px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__contributors {
+      .contributors-list {
+        &-item {
+          margin-bottom: 10px;
+        }
+      }
+
+      .contributors-avatar {
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 4px;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .contributors-detail {
+        font-size: 13px;
+        line-height: 18px;
+
+        a {
+          font-weight: 500 !important;
+          color: $dark-blue;
+        }
+
+        p {
+          font-weight: 400;
+          color: $grey;
+        }
+      }
+    }
+
+    &__communities {
+      .communities-list {
+        &-item {
+          margin-bottom: 10px;
+        }
+      }
+
+      .communities-avatar {
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 4px;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .communities-detail {
+        font-size: 13px;
+        line-height: 18px;
+
+        a {
+          font-weight: 500 !important;
+          color: $dark-blue;
+        }
+
+        p {
+          font-weight: 400;
+          color: $grey;
+        }
+      }
+    }
+  }
+}
+
+.join {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: fixed;
+  content: "";
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  background-color: $light-grey;
+
+  @media screen and (min-width: 768px) {
+    width: fit-content;
+  }
+
+  @media screen and (min-width: 1024px) {
+    right: 10px;
+    left: unset;
+    transform: translateX(0);
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 12px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+
+    &.btn--link {
+      color: $blue;
+      margin-bottom: 0;
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+      }
+    }
+  }
+}

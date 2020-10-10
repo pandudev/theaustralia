@@ -1,0 +1,12 @@
+.footer {
+  background-color: #232324;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &__copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: $grey;
+    line-height: 21px;
+  }
+}
