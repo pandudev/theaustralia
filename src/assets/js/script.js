@@ -7,13 +7,20 @@ let wHeight = $(window).height();
 
 let sidebar = $("#sidebar");
 let article = $("#article");
+let join = $("#join");
 let sidebarToggler = $("#sidebarToggler")
 let homeHeader = $("#homeHeader");
+let closeJoin = $("#btnJoinClose");
 
 let articleButton = $("#btnArticle");
 let sidebarButton = $("#btnSidebar");
 
 let sidebarShow = false;
+
+closeJoin.click((e) => {
+  e.preventDefault();
+ join.hide()
+})
 
 articleButton.click(() => {
   sidebarShow = false;
