@@ -75,6 +75,11 @@ if (wWidth < 1024) {
 }
 
 $(() => {
+
+  setTimeout(() => {
+    join.show()
+  }, 3000);
+
 $(window).on('resize', function() {
   wWidth = $(window).width();
   wHeight = $(window).height();
