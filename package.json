@@ -18,7 +18,8 @@
     "webpack-stream": "^5.2.1"
   },
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "ghpublish": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "pandu wijaya",
   "license": "ISC"

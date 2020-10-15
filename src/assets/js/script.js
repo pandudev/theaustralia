@@ -1,25 +1,24 @@
 //jQuery
 window.$ = window.jQuery = require("jquery");
 
-// Script Here
-let wWidth = $(window).width();
-let wHeight = $(window).height();
+const navbar = $("#navbar");
+const sidebar = $("#sidebar");
+const articleList = $("#articleList");
+const forumList = $("#forumList");
+const join = $("#join");
+const closeJoin = $("#btnJoinClose");
 
-let sidebar = $("#sidebar");
-let article = $("#article");
-let join = $("#join");
-let sidebarToggler = $("#sidebarToggler")
-let homeHeader = $("#homeHeader");
-let closeJoin = $("#btnJoinClose");
+const articleButton = $("#btnArticle");
+const sidebarButton = $("#btnSidebar");
 
-let articleButton = $("#btnArticle");
-let sidebarButton = $("#btnSidebar");
+const navbarMenu = $("#navbarMenu");
+const menuButton = $("#btnMenu");
 
 let sidebarShow = false;
 
 closeJoin.click((e) => {
   e.preventDefault();
- join.hide()
+ join.removeClass('show')
 })
 
 articleButton.click(() => {
@@ -30,6 +29,11 @@ articleButton.click(() => {
 sidebarButton.click(() => {
   sidebarShow = true;
   toggleSidebar();
+})
+
+menuButton.click((e) => {
+  e.preventDefault();
+  $(navbarMenu).toggleClass("active")
 })
 
 const showFlex = (element) => {
@@ -45,52 +49,34 @@ const hideFlex = (element) => {
 const toggleSidebar = () => {
   if (sidebarShow) {
     showFlex(sidebar);
-    hideFlex(article);
+    hideFlex(articleList);
+    hideFlex(forumList);
     sidebarButton.addClass('btn--primary');
     articleButton.removeClass('btn--primary');
-     hideFlex(homeHeader);
   } else {
-    showFlex(article);
+    showFlex(forumList);
+    showFlex(articleList);
     hideFlex(sidebar);
     articleButton.addClass('btn--primary');
     sidebarButton.removeClass('btn--primary');
-    if (wWidth >= 768) {
-    showFlex(homeHeader);
-  } else {
-    hideFlex(homeHeader)
   }
-  }
-
-  
 }
 
-if (wWidth < 1024) {
-  toggleSidebar();
-  showFlex(sidebarToggler);
-} else {
-  hideFlex(sidebarToggler);
-  showFlex(article);
-  showFlex(sidebar);
-  showFlex(homeHeader);
-}
+ $('body').scroll(() => {
+  //  console.log('scroll')
+  //   console.log($(navbar).offset().top)
+    if (navbar.offset().top == 0) {
+      navbar.addClass('scrolled');
+    } else {
+      navbar.removeClass('scrolled')
+    }
+  })
+
 
 $(() => {
 
   setTimeout(() => {
-    join.show()
+    join.addClass('show')
   }, 3000);
-
-$(window).on('resize', function() {
-  wWidth = $(window).width();
-  wHeight = $(window).height();
-
-if (wWidth < 1024) {
-  toggleSidebar();
-  showFlex(sidebarToggler);
-} else {
-  hideFlex(sidebarToggler);
-  showFlex(article);
-  showFlex(sidebar);
-}
-});
+  
 })

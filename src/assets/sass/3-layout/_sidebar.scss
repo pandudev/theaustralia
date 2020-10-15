@@ -1,0 +1,175 @@
+.sidebar {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    flex: 0 0 30%;
+    display: flex !important;
+  }
+
+  margin-top: 10px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    color: $black;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+    font-weight: 400;
+  }
+
+  &__content {
+    margin-top: 20px;
+  }
+
+  & > div {
+    background-color: $light-blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__about {
+    .about-detail {
+      font-size: 14px;
+      line-height: 21px;
+      color: $grey;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .about-count {
+      margin-bottom: 20px;
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+        color: $black;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $grey;
+        font-weight: 400;
+      }
+
+      &-divider {
+        height: 55px;
+        width: 1px;
+        background-color: $grey;
+        margin: 0 20px;
+      }
+    }
+  }
+
+  &__forums {
+    .forums-list {
+      &-item {
+        margin-bottom: 20px;
+        &-category {
+          font-size: 13px;
+          color: $dark-blue;
+          font-weight: 500;
+          line-height: 18px;
+        }
+
+        &-detail {
+          margin-top: 8px;
+          div {
+            margin-right: 30px;
+
+            img {
+              margin-right: 8px;
+            }
+
+            p {
+              font-size: 13px;
+              color: $grey;
+              line-height: 18px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__contributors {
+    .contributors-list {
+      &-item {
+        margin-bottom: 10px;
+      }
+    }
+
+    .contributors-avatar {
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .contributors-detail {
+      font-size: 13px;
+      line-height: 18px;
+
+      a {
+        font-weight: 500 !important;
+        color: $dark-blue;
+      }
+
+      p {
+        font-weight: 400;
+        color: $grey;
+      }
+    }
+  }
+
+  &__communities {
+    .communities-list {
+      &-item {
+        margin-bottom: 10px;
+      }
+    }
+
+    .communities-avatar {
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .communities-detail {
+      font-size: 13px;
+      line-height: 18px;
+
+      a {
+        font-weight: 500 !important;
+        color: $dark-blue;
+      }
+
+      p {
+        font-weight: 400;
+        color: $grey;
+      }
+    }
+  }
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+  <header class="header d-flex align-items-end">
+    <nav id="navbar" class="navbar">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <img src="./assets/img/main-logo.svg" alt="Main Logo" class="navbar__logo">
+        <div class="navbar__link d-flex justify-content-between">
+          <a href="">
+            <img src="./assets/img/icon/trending-icon.svg" alt="Trending">
+          </a>
+          <a href="">
+            <img src="./assets/img/icon/user-icon.svg" alt="Login" class="mr-2">
+            Login
+          </a>
+          <a id="btnMenu" href="">
+            <img src="./assets/img/icon/vertical-dots-icon.svg" alt="More Menu">
+          </a>
+        </div>
+
+        <div class="navbar__search">
+          <input type="text" placeholder="Search Community">
+          <img src="./assets/img/icon/search-icon.svg" alt="Search" class="input-suffix">
+        </div>
+
+        <div id="navbarMenu" class="navbar__menu">
+          <ul>
+            <li><a href="">What's New</a></li>
+            <li><a href="">Forum Listing</a></li>
+            <li><a href="">Showcase</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Members</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="d-flex flex-column container">
+
+    <div id="sidebarToggler" class="main__toggler">
+      <button id="btnArticle" class="btn btn--primary">Recommended</button>
+      <button id="btnSidebar" class="btn">About</button>
+    </div>
+
+    <div class="main__wrapper d-flex justify-content-between">
+
+      <div id="forum" class="forum py-3 flex-fill">
+        <div id="forumList" class="d-flex flex-column">
+        <div class="forum__list">
+          <div class="forum__list__header">Articles</div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forum__list">
+          <div class="forum__list__header">New Forums</div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forum__list">
+          <div class="forum__list__header">Top Forums</div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="forum__list__item d-flex">
+            <div class="forum__list__item__avatar">
+              <img src="./assets/img/icon/ts-avatar-icon.svg" alt="">
+            </div>
+            <div
+              class="forum__list__item__content d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+              <div>
+                <div class="forum__list__item__content__title">The Australia Forum Articles</div>
+                <p class="forum__list__item__content__caption">This section contains commynity artices written by The
+                  Australia
+                  Forum members</p>
+              </div>
+              <div class="forum__list__item__content__detail d-flex align-items-center">
+                <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                <span class="forum__list__item__content__detail__day">2 d ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forum__list">
+          <div class="forum__list__header">Latest Posts</div>
+          <div class="forum__list__item">
+            <div class="forum__list__item__category">
+              <div class="forum__list__item__category__tag">category</div>
+              <div class="forum__list__item__category__title">Team Management Skills</div>
+              <div class="d-flex flex-column flex-md-row align-items-md-center">
+                <div class="forum__list__item__category__detail d-flex align-items-center">
+                  <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                  <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                </div>
+                <div class="forum__list__item__category__history d-flex align-items-center">
+                  <div>
+                    <img src="./assets/img/avatars/avatar.jpg" alt="">
+                    <a href="">ticklishkoala607</a>
+                  </div>
+                  <span>updated 4 hours ago</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="forum__list__item">
+            <div class="forum__list__item__category">
+              <div class="forum__list__item__category__tag">category</div>
+              <div class="forum__list__item__category__title">Team Management Skills</div>
+              <div class="d-flex flex-column flex-md-row align-items-md-center">
+                <div class="forum__list__item__category__detail d-flex align-items-center">
+                  <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                  <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                </div>
+                <div class="forum__list__item__category__history d-flex align-items-center">
+                  <div>
+                    <img src="./assets/img/avatars/avatar.jpg" alt="">
+                    <a href="">ticklishkoala607</a>
+                  </div>
+                  <span>updated 4 hours ago</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="forum__list__item">
+            <div class="forum__list__item__category">
+              <div class="forum__list__item__category__tag">category</div>
+              <div class="forum__list__item__category__title">Team Management Skills</div>
+              <div class="d-flex flex-column flex-md-row align-items-md-center">
+                <div class="forum__list__item__category__detail d-flex align-items-center">
+                  <span><img src="./assets/img/icon/reply-icon.svg" alt=""> 1M</span>
+                  <span><img src="./assets/img/icon/eye-icon.svg" alt=""> 234M</span>
+                </div>
+                <div class="forum__list__item__category__history d-flex align-items-center">
+                  <div>
+                    <img src="./assets/img/avatars/avatar.jpg" alt="">
+                    <a href="">ticklishkoala607</a>
+                  </div>
+                  <span>updated 4 hours ago</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <aside id="sidebar" class="sidebar  flex-column">
+        <div class="sidebar__about container">
+          <div class="sidebar__title">The Australia</div>
+          <div class="sidebar__subtitle">Since 2020</div>
+          <div class="sidebar__content">
+            <p class="about-detail">A forum community dedicated to home theater owners and enthusiasts. Come join the
+              discussion
+              about home audio/video, TVs, projectors, screens, receivers, speakers, projects, DIY’s, product reviews,
+              accessories,
+              classifieds, and more!</p>
+            <div class="d-flex">
+              <div class="about-count">
+                <h1>31M</h1>
+                <p>posts</p>
+              </div>
+              <div class="about-count-divider"></div>
+              <div class="about-count">
+                <h1>1.3K</h1>
+                <p>members</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn--dark">
+              <img src="./assets/img/icon/user-icon.svg" alt="">
+              Join Community
+            </a>
+          </div>
+
+        </div>
+        <div class="sidebar__forums container">
+          <div class="sidebar__title">Our Top Forums</div>
+          <div class="sidebar__content d-flex flex-column">
+            <div class="forums-list">
+              <div class="forums-list-item">
+                <a href="" class="forums-list-item-category">Receiver, Amps, and Processors</a>
+                <div class="forums-list-item-detail d-flex">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/icon/reply-icon.svg" alt="">
+                    <p>1M</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/icon/eye-icon.svg" alt="">
+                    <p>234M</p>
+                  </div>
+                </div>
+              </div>
+              <div class="forums-list-item">
+                <a href="" class="forums-list-item-category">Receiver, Amps, and Processors</a>
+                <div class="forums-list-item-detail d-flex">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/icon/reply-icon.svg" alt="">
+                    <p>1M</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/icon/eye-icon.svg" alt="">
+                    <p>234M</p>
+                  </div>
+                </div>
+              </div>
+              <div class="forums-list-item">
+                <a href="" class="forums-list-item-category">Receiver, Amps, and Processors</a>
+                <div class="forums-list-item-detail d-flex">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/icon/reply-icon.svg" alt="">
+                    <p>1M</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/icon/eye-icon.svg" alt="">
+                    <p>234M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="btn btn--link align-self-center">View All <img
+                src="./assets/img/icon/arrow-right-icon.svg" alt=""></a>
+          </div>
+
+        </div>
+        <div class="sidebar__contributors container">
+          <div class="sidebar__title">Top Contributors</div>
+          <div class="sidebar__subtitle">October 2020</div>
+          <div class="sidebar__content">
+            <div class="contributors-list">
+              <div class="contributors-list-item d-flex align-items-center">
+                <div class="contributors-avatar">
+                  <img src="./assets/img/avatars/avatar.jpg" alt="">
+                </div>
+                <div class="contributors-detail">
+                  <a href="">bluebear234</a>
+                  <p>128 posts</p>
+                </div>
+              </div>
+              <div class="contributors-list-item d-flex align-items-center">
+                <div class="contributors-avatar">
+                  <img src="./assets/img/avatars/avatar.jpg" alt="">
+                </div>
+                <div class="contributors-detail">
+                  <a href="">bluebear234</a>
+                  <p>128 posts</p>
+                </div>
+              </div>
+              <div class="contributors-list-item d-flex align-items-center">
+                <div class="contributors-avatar">
+                  <img src="./assets/img/avatars/avatar.jpg" alt="">
+                </div>
+                <div class="contributors-detail">
+                  <a href="">bluebear234</a>
+                  <p>128 posts</p>
+                </div>
+              </div>
+              <div class="contributors-list-item d-flex align-items-center">
+                <div class="contributors-avatar">
+                  <img src="./assets/img/avatars/avatar.jpg" alt="">
+                </div>
+                <div class="contributors-detail">
+                  <a href="">bluebear234</a>
+                  <p>128 posts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__communities container">
+          <div class="sidebar__title">Recommended Communities</div>
+          <div class="sidebar__content d-flex flex-column">
+            <div class="communities-list">
+              <div class="communities-list-item d-flex align-items-center">
+                <div class="communities-avatar">
+                  <img src="./assets/img/avatars/community.jpg" alt="">
+                </div>
+                <div class="communities-detail">
+                  <a href="">Bimmerfest BMW</a>
+                  <p>1.5K members</p>
+                </div>
+              </div>
+              <div class="communities-list-item d-flex align-items-center">
+                <div class="communities-avatar">
+                  <img src="./assets/img/avatars/community.jpg" alt="">
+                </div>
+                <div class="communities-detail">
+                  <a href="">Bimmerfest BMW</a>
+                  <p>1.5K members</p>
+                </div>
+              </div>
+              <div class="communities-list-item d-flex align-items-center">
+                <div class="communities-avatar">
+                  <img src="./assets/img/avatars/community.jpg" alt="">
+                </div>
+                <div class="communities-detail">
+                  <a href="">Bimmerfest BMW</a>
+                  <p>1.5K members</p>
+                </div>
+              </div>
+              <div class="communities-list-item d-flex align-items-center">
+                <div class="communities-avatar">
+                  <img src="./assets/img/avatars/community.jpg" alt="">
+                </div>
+                <div class="communities-detail">
+                  <a href="">Bimmerfest BMW</a>
+                  <p>1.5K members</p>
+                </div>
+              </div>
+            </div>
+            <a href="" class="btn btn--link align-self-center">View All <img
+                src="./assets/img/icon/arrow-right-icon.svg" alt=""></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+
+
+
+
+
+  </main>
+
+  <div id='join' class="join">
+    <div class="container d-flex flex-column">
+      <a id="btnJoinClose" href="" class="close">
+        <img src="./assets/img/icon/close-icon.svg" alt="">
+      </a>
+      <h1>Join now to ask and comment!</h1>
+      <div class="join__action d-flex flex-column flex-md-row justify-content-between">
+        <a href="#" class="btn btn--facebook">
+          <img src="./assets/img/icon/facebook-icon.svg" alt=""> Continue with Facebook
+        </a>
+        <a href="#" class="btn btn--google">
+          <img src="./assets/img/icon/google-icon.svg" alt=""> Continue with Google
+        </a>
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="mr-2">or</p>
+          <a href="#" class="btn btn--link">sign up with email</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <nav class="navbar-footer d-flex flex-wrap justify-content-start">
+        <a href="" class="navbar-footer__link">Home</a>
+        <a href="" class="navbar-footer__link">About Us</a>
+        <a href="" class="navbar-footer__link">Terms of Use</a>
+        <a href="" class="navbar-footer__link">Privacy Policy</a>
+        <a href="" class="navbar-footer__link">Help</a>
+        <a href="" class="navbar-footer__link">Contact Us</a>
+      </nav>
+      <p class="footer__copyright">The Australia &copy; 2020</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

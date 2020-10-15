@@ -1,0 +1,15 @@
+.main {
+  &__toggler {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+
+    .btn {
+      flex-basis: 50%;
+    }
+  }
+}
